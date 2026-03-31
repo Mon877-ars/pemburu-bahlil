@@ -180,15 +180,23 @@ nav a:hover {
 }
 
 .card {
-  background: var(--card);
-  border: 1px solid rgba(124, 109, 246, 0.2);
+  background: rgba(72, 99, 185, 0.28);
+  border: 1px solid rgba(74, 106, 214, 0.35);
+  color: #e9ebf2;
   border-radius: 16px;
   padding: 1.25rem;
   backdrop-filter: blur(10px);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   min-height: 170px;
 }
-
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 0.9rem;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
 .card:hover,
 .card:focus-within {
   transform: translateY(-6px);
@@ -319,7 +327,7 @@ body.light,
 body.light header,
 body.light .hero-visual,
 body.light .card {
-  color: var(--text);
+  color: #1a2236;
 }
 
 body.light header {
@@ -327,14 +335,30 @@ body.light header {
   border-bottom-color: rgba(76, 96, 200, 0.25);
 }
 
+body.light p,
+body.light a,
+body.light li,
+body.light h1,
+body.light h2,
+body.light h3,
+body.light .btn,
+body.light #formFeedback {
+  color: #1a2236;
+}
+
 .light .hero-visual {
   background: linear-gradient(175deg, rgba(79, 118, 255, 0.12) 0%, rgba(235, 240, 255, 0.95) 100%);
   border-color: rgba(106, 132, 255, 0.28);
 }
 
+.light .hero-visual p {
+  color: #1b2f6e;
+}
+
 .light .card {
-  background: rgba(255, 255, 255, 0.86);
-  border-color: rgba(106, 132, 255, 0.35);
+  background: rgba(133, 170, 255, 0.45);
+  border-color: rgba(42, 82, 216, 0.55);
+  box-shadow: 0 8px 26px rgba(51, 84, 201, 0.28);
 }
 
 .light input,
