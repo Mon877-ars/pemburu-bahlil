@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pemburu Bahlil - Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <button class="dark-mode" id="themeToggle" aria-label="Toggle dark mode">Mode Terang</button>
+
+  <header>
+    <div class="container nav-wrap">
+      <a href="#" class="brand">Pemburu Bahlil</a>
+      <nav>
+        <a href="#features">Fitur</a>
+        <a href="#about">Tentang</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero" id="home">
+      <div class="hero-text">
+        <h1>Landing Page profesonal untuk memburu peluang baru dan pertumbuhan digital Meme Bahlil</h1>
+        <p>
+          Solusi web modern dengan animasi halus, fitur responsif, dan CTA langsung. Cocok untuk startup Meme Bahlil, jasa digital Meme Bahlil, dan brand personal Meme Bahlil.
+        </p>
+        <a class="btn" href="#contact">Mulai Sekarang</a>
+      </div>
+
+      <aside class="hero-visual" aria-hidden="true">
+        <p>Desain pixel-perfect, implementasi HTML + CSS + JS cepat, UI bersih, dan pengalaman pengguna ramah seluler.</p>
+      </aside>
+    </section>
+
+    <section class="container features" id="features">
+      <h2 style="text-align:center; margin-bottom:1.5rem; color:#fff;">Fitur Unggulan</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Responsive Design</h3>
+          <p>Tampil sempurna di desktop, tablet, dan perangkat seluler dengan tata letak fleksibel dan tipografi clamping.</p>
+        </article>
+        <article class="card">
+          <h3>Mode Terang/Gelap</h3>
+          <p>Tombol interaktif untuk berpindah mode instan tanpa reload halaman.</p>
+        </article>
+        <article class="card">
+          <h3>Animasi Ringan</h3>
+          <p>Hover modern dan background glow memberi kesan profesional tanpa membebani CPU.</p>
+        </article>
+        <article class="card">
+          <h3>Skalabilitas Mudah</h3>
+          <p>Struktur CSS dan markup minimal memudahkan Anda menambahkan modul baru atau integrasi script.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container" id="about" style="padding:3rem 0;">
+      <div style="display:grid; gap:1.1rem;">
+        <h2 style="color:#fff;">Tentang Pemburu Bahlil</h2>
+        <p style="color:#d7ddf2; max-width:760px;">Kami mewujudkan landing page modern yang dirancang untuk konversi. Bergaya, cepat, dan mudah dikelola oleh siapa pun — bahkan jika Anda baru belajar web development.
+        </p>
+        <ul style="color:#c8d3ef; list-style: disc inside; max-width:760px;">
+          <li>Mudah diubah dan bebas dari framework berlebihan.</li>
+          <li>Siap untuk SEO dengan semantic HTML.</li>
+          <li>Interaksi UI yang user-friendly dan aksesibilitas ditingkatkan.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container" id="contact" style="padding:3rem 0;">
+      <h2 style="color:#fff; text-align:center;">Hubungi Kami</h2>
+      <p style="text-align:center; color:#cbd4f7; margin-bottom:1.6rem;">Isi formulir cepat atau kirim email untuk memulai proyek.</p>
+      <form id="leadForm" style="max-width:640px; margin: auto; display:grid; gap:0.95rem;">
+        <input type="text" id="name" name="name" placeholder="Nama" required style="padding:0.85rem 1rem; border-radius:10px; border:1px solid rgba(255,255,255,0.2); background:rgba(6,9,26,0.7); color:#fff;" />
+        <input type="email" id="email" name="email" placeholder="Email" required style="padding:0.85rem 1rem; border-radius:10px; border:1px solid rgba(255,255,255,0.2); background:rgba(6,9,26,0.7); color:#fff;" />
+        <textarea id="message" name="message" rows="5" placeholder="Pesan..." style="padding:0.85rem 1rem; border-radius:10px; border:1px solid rgba(255,255,255,0.2); background:rgba(6,9,26,0.7); color:#fff;"></textarea>
+        <button type="submit" class="btn">Kirim Pesan</button>
+      </form>
+      <p id="formFeedback" style="text-align:center; color:#94aafc; margin-top:1rem;"></p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Pemburu Bahlil. Dibuat dengan HTML, CSS, dan JavaScript. Template bisa langsung dikustom.
+  </footer>
+</body>
+</html>
