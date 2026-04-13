@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pemburu Bahlil - Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+  <form id="leadForm" action="email.php" method="POST"></form>
+</head>
+<body>
+  <button class="dark-mode" id="themeToggle" aria-label="Toggle dark mode">Mode Terang</button>
+  <header>
+    <div class="container nav-wrap">
+      <img class="card-img" src="asd.png" alt="Responsive Design" />
+      <a href="#" class="brand">DTHree</a>
+      <nav>
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero" id="home">
+      <div class="hero-text">
+        <h1>The
+          <span style="color:#175476;">AI <span style="color:#e80b1d;">Software </span>Engineer</span>
+        </h1>
+        <h1></h1>
+        <p>
+      Pengembang khusus yang mengintegrasikan Kecerdasan Buatan (AI) dan Pembelajaran mesin (ML) ke dalam sistem perangkat lunak
+        </p>
+      </div>
+      <aside class="hero-visual" aria-hidden="true">
+        <h3>Mendesain AI ke sofware, implementasi ML ke software, dan pengalaman pengguna ramah.</h3>
+      </aside>
+    </section>
+
+    <section class="container features" id="features">
+      <h2 style="text-align:center; margin-bottom:1.5rem; color:#fff;">Fitur Unggulan</h2>
+      <div class="grid">
+        <article class="card">
+          <img class="card-img" src="a.jpg" alt="Responsive Design" />
+          <h3>Responsive Design</h3>
+          <p></p>
+        </article>
+        <article class="card">
+          <img class="card-img" src="b.webp" alt="Mode Terang Gelap" />
+          <h3>Mode Terang/Gelap</h3>
+          <p></p>
+        </article>
+        <article class="card">
+          <img class="card-img" src="c.png" alt="Animasi Ringan" />
+          <h3>Animasi Ringan</h3>
+          <p></p>
+        </article>
+        <article class="card">
+          <img class="card-img" src="d.jpg" alt="Skalabilitas" />
+          <h3>Skalabilitas Mudah</h3>
+          <p></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container" id="about" style="padding:3rem 0;">
+      <div style="display:grid; gap:1.1rem;">
+        <h2 style="color:#fff;">Tentang Pemburu Bahlil</h2>
+        <p style="color:#d7ddf2; max-width:760px;">Kami mewujudkan landing page modern yang dirancang untuk konversi. Bergaya, cepat, dan mudah dikelola oleh siapa pun — bahkan jika Anda baru belajar web development.
+        </p>
+        <ul style="color:#c8d3ef; list-style: disc inside; max-width:760px;">
+          <li>Mudah diubah dan bebas dari framework berlebihan.</li>
+          <li>Siap untuk SEO dengan semantic HTML.</li>
+          <li>Interaksi UI yang user-friendly dan aksesibilitas ditingkatkan.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container" id="contact" style="padding:3rem 0;">
+      <h2 style="color:#fff; text-align:center;">Hubungi Kami</h2>
+      <p style="text-align:center; color:#cbd4f7; margin-bottom:1.6rem;">Isi formulir cepat atau kirim email untuk memulai proyek.</p>
+    <form action="kirim.php" method="POST">
+      <input type="text" name="nama" placeholder="Nama Anda" required>
+      <input type="email" name="email" placeholder="Email Anda" required>
+      <textarea name="pesan" placeholder="Isi Pesan" required></textarea>
+      <button type="submit" name="kirim">Kirim Pesan</button>
+    </form>
+      <p id="formFeedback" style="text-align:center; color:#94aafc; margin-top:1rem;"></p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Pemburu Bahlil. Dibuat dengan HTML, CSS, dan JavaScript. Template bisa langsung dikustom.
+  </footer>
+</body>
+</html>
