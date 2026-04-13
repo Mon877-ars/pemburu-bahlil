@@ -104,30 +104,6 @@ nav a:hover {
   font-size: 1.08rem;
 }
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 1.5rem;
-  padding: 1.85rem 1.6rem;
-  font-weight: 700;
-  border-radius: 999px;
-  border: 1px solid transparent;
-  background: linear-gradient(145deg, var(--accent), var(--accent-soft));
-  color: #25a33a;
-  text-decoration: none;
-  box-shadow: 0 10px 20px rgba(25, 5, 125, 0.35);
-  transition: transform 0.2s ease, filter 0.2s ease;
-}
-
-.btn:hover,
-.btn:focus-visible {
-  transform: translateY(-1px);
-  filter: brightness(0.8);
-  outline: none;
-}
-
 .hero-visual {
   position: sticky;
   display: grid;
@@ -135,11 +111,18 @@ nav a:hover {
   min-height:280px;
   border-radius: 30px;
   background: linear-gradient(875deg, rgba(139, 167, 255, 0.18) 0%, rgba(16, 23, 66, 0.7) 100%);
-  border: 1px solid rgba(83, 75, 194, 0.35);
+  border: 1px solid rgba(88, 81, 185, 0.35);
   overflow: hidden;
   min-width: 260px;
 }
-
+.hero-visual h2 {
+  position: relative;
+  z-index: 1;
+  max-width: 510px;
+  color: #c4efcf;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
 .hero-visual::before,
 .hero-visual::after {
   content: '';
@@ -152,13 +135,13 @@ nav a:hover {
 }
 
 .hero-visual::before {
-  background: #3eb664;
+  background: #66da8b;
   left: -70px;
   top: -65px;
 }
 
 .hero-visual::after {
-  background: #217f8a;
+  background: #6786d3;
   right: -90px;
   bottom: -60px;
 }
@@ -166,7 +149,7 @@ nav a:hover {
 .hero-visual p {
   position: relative;
   z-index: 1;
-  color: #fff;
+  color: #ffffff;
   mix-blend-mode: screen;
   text-align: center;
   padding: 2rem;
@@ -228,14 +211,17 @@ nav a:hover {
 #contact > form {
   margin: 0 auto;
   max-width: 760px;
+  display: grid;
+  gap: 1rem;
+  color:#455784
 }
 
 #about h2,
 #contact h2 {
-  color: #fff;
+  color: #ad2c2c;
   text-align: center;
 }
-
+  
 #about p,
 #contact p {
   color: #d7ddf2;
@@ -251,10 +237,10 @@ nav a:hover {
 input,
 textarea {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 25px;
   border: 1px solid var(--border);
   background: var(--input-bg);
-  color: #fff;
+  color: #09a1dd;
   padding: 0.85rem 1rem;
   font: inherit;
   outline: none;
@@ -264,8 +250,50 @@ textarea {
 input:focus,
 textarea:focus {
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(127, 90, 240, 0.2);
+  box-shadow: 0 0 0 3px rgba(139, 136, 148, 0.2);
 }
+
+input::placeholder,
+textarea::placeholder {
+  color: #70aac9;
+  opacity: 0.7;
+}
+
+button[type="submit"] {
+  background: linear-gradient(145deg, #0b1665, #8ea4d0);
+  color: #c7a3a3;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  width: 100%;
+}
+/* .light.container.button[type="submit"] {
+  background: linear-gradient(145deg, #aaacc0, #1a4fb7);
+  color: #c7a3a3;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  width: 100%;
+} */
+
+button[type="submit"]:hover,
+button[type="submit"]:focus-visible {
+  transform: translateY(-2px);
+  filter: brightness(0.9);
+  outline: none;
+}
+/* .light.container.button[type="submit"]:hover,
+.light.container.button[type="submit"]:focus-visible {
+  transform: translateY(-2px);
+  filter: brightness(0.9);
+  outline: none;
+/* } */
 
 #formFeedback {
   text-align: center;
@@ -323,13 +351,13 @@ footer {
 }
 
 .light {
-  --bg: #f2f5ff;
+  --bg: #213061;
   --text: #1a2236;
   --text-soft: #4a4f67;
   --accent: #4b6eff;
-  --accent-soft: #8fa7ff;
-  --card: rgba(255, 255, 255, 0.85);
-  --input-bg: rgba(255, 255, 255, 0.92);
+  --accent-soft: #2f4db8;
+  --card: rgba(160, 66, 66, 0.85);
+  --input-bg: rgba(97, 127, 227, 0.92);
   --border: rgba(26, 34, 78, 0.2);
 }
 
@@ -341,7 +369,7 @@ body.light .card {
 }
 
 body.light header {
-  background: rgba(240, 243, 255, 0.82);
+  background: transparent;
   border-bottom-color: rgba(76, 96, 200, 0.25);
 }
 
@@ -353,16 +381,60 @@ body.light h2,
 body.light h3,
 body.light .btn,
 body.light #formFeedback {
-  color: #1a2236;
+  color: #868ea1;
 }
 
-.light .hero-visual {
-  background: linear-gradient(175deg, rgba(79, 118, 255, 0.12) 0%, rgba(235, 240, 255, 0.95) 100%);
-  border-color: rgba(106, 132, 255, 0.28);
+
+.light.hero-visual {
+  position: sticky;
+  display: grid;
+  place-items: center;
+  min-height:280px;
+  border-radius: 30px;
+  background: linear-gradient(875deg, rgba(139, 167, 255, 0.18) 0%, rgba(16, 23, 66, 0.7) 100%);
+  border: 1px solid rgba(88, 81, 185, 0.35);
+  overflow: hidden;
+  min-width: 260px;
+}
+.light.hero-visual h2 {
+  position: relative;
+  z-index: 1;
+  max-width: 510px;
+  color: #c4efcf;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+.light.hero-visual::before,
+.light.hero-visual::after {
+  content: '';
+  position: absolute;
+  width:310px;
+  height: 320px;
+  border-radius: 50%;
+  filter: blur(92px);
+  opacity: 0.5;
 }
 
-.light .hero-visual p {
-  color: #1b2f6e;
+.light.hero-visual::before {
+  background: #66da8b;
+  left: -70px;
+  top: -65px;
+}
+
+.light.hero-visual::after {
+  background: #6786d3;
+  right: -90px;
+  bottom: -60px;
+}
+
+.light.hero-visual p {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  mix-blend-mode: screen;
+  text-align: center;
+  padding: 2rem;
+  font-weight: 600;
 }
 
 .light .card {
@@ -374,7 +446,7 @@ body.light #formFeedback {
 .light input,
 .light textarea {
   background: var(--input-bg);
-  color: #1a2236;
+  color: #758dbe;
   border-color: var(--border);
 }
 
