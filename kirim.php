@@ -16,7 +16,7 @@ if (isset($_POST['kirim'])) {
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'janwardlumbantoruan566@gmail.com'; // Email kamu
-        $mail->Password   = 'orzpyecpzzuuhcip'; // 16 DIGIT APP PASSWORD KAMU
+        $mail->Password   = ''; // 16 DIGIT APP PASSWORD KAMU
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
